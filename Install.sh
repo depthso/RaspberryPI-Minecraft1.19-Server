@@ -33,7 +33,7 @@ else
 	sudo apt-get install screen -y
 	echo -ne '>>>>>>>                   [40%]\r'
 	printf "${Green}+ Downloading Papermc 1.19.2...${NC}\n"
-	wget -P . https://api.papermc.io/v2/projects/paper/versions/1.19.2/builds/125/downloads/paper-1.19.2-125.jar
+	wget -P . https://api.papermc.io/v2/projects/paper/versions/1.19.2/builds/125/downloads/paper-1.19.2-125.jar || error "Could not ownload PaperMC. Check your internet."
 	echo -ne '>>>>>>>>>>>>>>            [60%]\r'
 	printf "${Green}+ Downloading Java 17 32bit...${NC}\n"
 	wget -P . https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz
