@@ -1,7 +1,11 @@
 # Raspberry-PI-Minecraft-1.19.2-PaperMC-Server
 A automatic installer for PaperMC that includes one click install and run using Minecraft 1.19.2 and Java 17.
 
+![PaperMC](https://user-images.githubusercontent.com/86912923/184614427-7947327b-f847-4876-94fd-ec9e38c22351.png)
+
 - <b>Only works with a 32bit OS!</b>
+- <b>It's recomended to use a Raspberry pi 4 since chunk generating will be very slow!</b>
+- <b>It is also highly recommended to overclock the pi to 2GHz and overvolt to 6!</b>
 
 # Installing
 - Download `Install.sh` from the repository
