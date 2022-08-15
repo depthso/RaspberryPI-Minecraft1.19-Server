@@ -1,5 +1,5 @@
-# Raspberry-PI-Minecraft-1.19.2-PaperMC-Server
-A automatic installer for PaperMC that includes one click install and run using Minecraft 1.19.2 and Java 17.
+# Raspberry PI Minecraft-1.19.2 Minecraft Server
+A automatic installer for PaperMC that includes one click installing and running using Minecraft 1.19.2 and Java 17.
 
 ![PaperMC](https://user-images.githubusercontent.com/86912923/184614427-7947327b-f847-4876-94fd-ec9e38c22351.png)
 
