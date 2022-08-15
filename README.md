@@ -9,6 +9,7 @@ An automatic installer for PaperMC and Java 17 for hosting your own Minecraft se
 
 # Installing
 - Download `Install.sh` from the repository
+`wget https://raw.githubusercontent.com/depthso/RaspberryPIMinecraft1.19.2-Server/main/Install.sh `
 - Put the script in a folder that the server will be in. 
 ```
 $ mkdir Minecraft
