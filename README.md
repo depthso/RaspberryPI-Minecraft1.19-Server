@@ -3,9 +3,7 @@ A automatic installer for PaperMC that includes one click install and run using 
 
 - <b>Only works with a 32bit OS!</b>
 
-# Running the script 
-
-## Installing
+# Installing
 - Download `Install.sh` from the repository
 - Put the script in a folder that the server will be in. 
 ```
@@ -20,7 +18,7 @@ $ sh Install.sh
 - After the install is finisted, open eula.txt `$ nano eula.txt` and set eula to `true` and save then exit it `Ctrl O, Ctrl X` 
 - Run the script again in Terminal using `$ sh Install.sh`.
 
-## Running
+# Running the server
 - Open the server's folder in Terminal and run `$ sh Install.sh`. Don't worry, it won't install anything again. 
 
 # Changing the ram size
