@@ -40,7 +40,7 @@ else
 	tar xzfv OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz
 	echo '>>>>>>>>>>>>>>>>>>>>>>>>>>[100%]\r'
 	sudo rm OpenJDK17U-jdk_arm_linux_hotspot_17.0.1_12.tar.gz
-	printf "${Green}Starting PaperMC...\n\n-------------------\n"
+	printf "${Green}Starting PaperMC...\n\n-------------------\n\n"
 	echo -n '-- Do you want to install recommended plugins to increase performance? (y/n):'
 	read doinstall
 	printf "${NC}"
@@ -56,7 +56,7 @@ else
 		printf "${Green}+ Installed plugins${NC}\n"
 	fi
 	./jdk-17.0.1+12/bin/java -Xms1G -Xmx1G -jar "papermc.jar" --nogui
-	printf "\n\n\n\n\n\n\n\n"
+	printf "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 	toilet -f future -F border --gay Install compleat!
-	printf "\n\n- Please agree to the eula (In eula.txt) and run this script again to start the server!\n"
+	printf "\n\n- Please agree to the eula (In eula.txt) and run this script again to start the server!\n\n\n"
 fi
