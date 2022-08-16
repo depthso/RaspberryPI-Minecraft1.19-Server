@@ -20,7 +20,7 @@ $ mkdir Minecraft
 $ cd Minecraft
 ```
 - Download `Install.sh` from the repository or using:
-`wget -P ./FOLDER_NAME https://raw.githubusercontent.com/depthso/RaspberryPIMinecraft1.19.2-Server/main/Install.sh `
+`wget https://raw.githubusercontent.com/depthso/RaspberryPIMinecraft1.19.2-Server/main/Install.sh `
 - Build and run it
 ```
 $ chmod +x Install.sh
