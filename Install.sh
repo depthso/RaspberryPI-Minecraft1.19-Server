@@ -13,7 +13,8 @@ RED='\033[0;31m'
 NC='\033[0m'
 Green='\033[0;32m'
 
-if [ -f "papermc.jar" ]; then
+if [ -f "papermc.jar" ]; then # Check if papermc is installed
+        toilet -f mono9 -F border --gay Minecraft
 	printf "${NC}+ Server is using ${Ram} of ram.\n\n${Green}---- SERVER IP ----\n"
 	ip route
 	printf "\n"
@@ -24,6 +25,8 @@ else
 	echo '                          [0%]\r'
 	printf "${Green}+ Running sudo apt update...${NC}\n" 
 	sudo apt update || error "The command 'sudo apt update' failed. Check your apt package-management system."
+	printf "${Green}+ Installing toilet...${NC}\n" 
+        sudo apt install toilet -y
 	echo '>>>                       [20%]\r'
 	sudo apt-get install screen -y
 	echo '>>>>>>>                   [40%]\r'
@@ -47,12 +50,13 @@ else
 		printf "${Green}+ Starting Install of plugins...${NC}\n"
 		sudo wget -P ./plugins "https://ci.codemc.io/job/Nathat23/job/StackMob-5/lastSuccessfulBuild/artifact/target/StackMob-5.8.3.jar"
 		sudo wget -P ./plugins "https://ci.lucko.me/job/spark/332/artifact/spark-bukkit/build/libs/spark-1.9.33-bukkit.jar"
-		sudo wget -P ./plugins "https://mediafiles.forgecdn.net/files/2734/790/SAML+1.3.5.jar"
+		sudo wget -P ./plugins "https://mediafiles.forgecdn.net/files/2734/790/SAML+1.3.5.jar" # These plugins are from curseforge.com
 		sudo wget -P ./plugins "https://mediafiles.forgecdn.net/files/3198/633/Clearlag.jar"
 		sudo wget -P ./plugins "https://mediafiles.forgecdn.net/files/2744/510/LaggRemover-2.0.6.jar"
 		printf "${Green}+ Installed plugins${NC}\n"
 	fi
 	./jdk-17.0.1+12/bin/java -Xms1G -Xmx1G -jar "papermc.jar" --nogui
-	printf "${Green}++ Installed server!${NC}\n"
-	printf "\n- Please agree to the eula (In eula.txt) and run this script again to run the server.\n"
+	printf "\n\n\n\n\n\n\n\n"
+	toilet -f future -F border --gay Install compleat!
+	printf "\n\n- Please agree to the eula (In eula.txt) and run this script again to start the server!\n"
 fi
