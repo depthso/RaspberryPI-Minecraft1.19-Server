@@ -1,13 +1,15 @@
 #!/bin/bash
 
-#--- Server Config ---
 
-Ram='2G'  # 2048MB // The amount of ram the server will be using.
+# The amount of ram the server will be using.
+
+Ram='2G'
+
 
 # Server ip will look something like this: 192.168.1.60 NOT 192.168.1.0/24
 #                                          ------------     --------------
 
-#--- --- --- ---
+
 
 RED='\033[0;31m'
 NC='\033[0m'
